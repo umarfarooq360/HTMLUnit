@@ -1,0 +1,35 @@
+
+
+package edu.richmond.mathcs.htmlunit;
+
+import org.apache.commons.codec.DecoderException;
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.apache.http.HttpStatus;
+import org.apache.http.NoHttpResponseException;
+import org.apache.http.client.CredentialsProvider;
+import org.apache.http.cookie.CookieOrigin;
+import org.w3c.css.sac.ErrorHandler;
+
+import com.gargoylesoftware.htmlunit.html.*;
+import com.gargoylesoftware.htmlunit.WebClient;
+import java.io.*;
+import java.util.*;
+
+public class OmarTest {
+	
+	public static void main(String[] args) 	 {
+	    try {
+		final WebClient webClient = new WebClient();
+		final HtmlPage page = webClient.getPage("http://www.google.com");
+
+		System.out.println(page.getWebResponse().getContentAsString() );
+		webClient.closeAllWindows();
+	    }catch (Exception e ){
+		
+	    }
+
+	}
+}

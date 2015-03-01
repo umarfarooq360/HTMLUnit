@@ -1,0 +1,11 @@
+
+
+package edu.richmond.mathcs.htmlunit;
+
+public class DougTest {
+
+    public static void main(String[] arg) {
+
+	System.out.print("DougTest says Hello World!\n");
+    }
+}

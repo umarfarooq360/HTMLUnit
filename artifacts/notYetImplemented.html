@@ -1,0 +1,3116 @@
+<html><head>
+<style type="text/css">
+table.bottomBorder { border-collapse:collapse; }
+table.bottomBorder td, table.bottomBorder th { border-bottom:1px dotted black;padding:5px; }
+table.bottomBorder td.numeric { text-align:right; }
+</style>
+</head><body>
+<p>NotYetImplemented is a condition in which a test is known to fail with HtmlUnit.</p><h3>Overview</h3><table class='bottomBorder'>
+  <tr>
+    <td class='numeric'>492</td>
+    <td>methods marked as NotYetImplemented</td>
+  </tr>
+  <tr>
+    <td class='numeric'>362</td>
+    <td>for IE8</td>
+  </tr>
+  <tr>
+    <td class='numeric'>263</td>
+    <td>for IE11</td>
+  </tr>
+  <tr>
+    <td class='numeric'>229</td>
+    <td>for FF24</td>
+  </tr>
+  <tr>
+    <td class='numeric'>230</td>
+    <td>for FF31</td>
+  </tr>
+</table>
+<h3>Details</h3><table class='bottomBorder'>
+  <tr><th>File</th><th>#</th><th>Method</th><th>Line</th><th>Description</th></tr>
+  <tr>
+    <td>CookieManagerTest</td>
+    <td>0</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9563/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/CookieManagerTest.java#l127'>emptyCookieName()</a> All</td>
+    <td class='numeric'>127</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>ErrorOutputCheckereTest</td>
+    <td>1</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9480/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/ErrorOutputCheckereTest.java#l32'>systemErrOutputShouldBreakTest()</a> All</td>
+    <td class='numeric'>32</td>
+    <td>Test expected to fail because it produces output on {@link System.err}.</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>HttpWebConnection3Test</td>
+    <td>2</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9649/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/HttpWebConnection3Test.java#l43'>headers()</a> IE</td>
+    <td class='numeric'>43</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9649/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/HttpWebConnection3Test.java#l83'>headers_cookie_referer()</a> IE</td>
+    <td class='numeric'>83</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>UrlFetchWebConnectionTest</td>
+    <td>4</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/UrlFetchWebConnectionTest.java#l110'>post_multipart()</a> All</td>
+    <td class='numeric'>110</td>
+    <td>Simple POST multipart. This doesn't work currently and the test should be reworked as the boundary for the body varies.</td>
+  </tr>
+  <tr>
+    <td>WebClient2Test</td>
+    <td>5</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/WebClient2Test.java#l193'>serialization_withJSBackgroundTasks()</a> All</td>
+    <td class='numeric'>193</td>
+    <td>Background tasks that have been registered before the serialization should wake up and run normally after the deserialization. Until now (2.7-SNAPSHOT 17.09.09) HtmlUnit has probably never supported it. This is currently not requested and this test is just to document the current status.</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>WebClient3Test</td>
+    <td>6</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8947/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/WebClient3Test.java#l470'>deflateCompressionNonGZipCompatible()</a> IE11</td>
+    <td class='numeric'>470</td>
+    <td>Test "deflate" encoding with ZLIB header and checksum fields.</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8947/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/WebClient3Test.java#l172'>escapeRequestQuery2a()</a> All</td>
+    <td class='numeric'>172</td>
+    <td>Was causing a "java.net.URISyntaxException: Malformed escape pair" as of HtmlUnit-2.12-SNAPSHOT on Nov. 29, 2012. HtmlUnit now escapes the "%%" to "%25%25" to build a valid URL but FF doesn't care and sends the invalid "%%" sequence as it. This will be quite difficult to simulate FF here as HttpClient's HttpRequestBase uses URI and "%%" can't be part of the query string for a URI.</td>
+  </tr>
+  <tr>
+    <td>XMLDOMCDATASectionTest</td>
+    <td>8</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9546/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/activex/javascript/msxml/XMLDOMCDATASectionTest.java#l271'>nodeValue_empty()</a> IE</td>
+    <td class='numeric'>271</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>XMLDOMDocumentTest</td>
+    <td>9</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9540/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/activex/javascript/msxml/XMLDOMDocumentTest.java#l433'>firstChild_xmlDeclaration()</a> IE</td>
+    <td class='numeric'>433</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9540/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/activex/javascript/msxml/XMLDOMDocumentTest.java#l555'>lastChild_xmlDeclaration()</a> IE</td>
+    <td class='numeric'>555</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>XMLDOMDocumentTypeTest</td>
+    <td>11</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9544/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/activex/javascript/msxml/XMLDOMDocumentTypeTest.java#l251'>xml()</a> IE</td>
+    <td class='numeric'>251</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>XMLDOMProcessingInstructionTest</td>
+    <td>12</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9542/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/activex/javascript/msxml/XMLDOMProcessingInstructionTest.java#l75'>attributes_complete_xmlDecl()</a> IE</td>
+    <td class='numeric'>75</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9542/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/activex/javascript/msxml/XMLDOMProcessingInstructionTest.java#l60'>attributes_xmlDecl()</a> IE</td>
+    <td class='numeric'>60</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>XMLDOMTextTest</td>
+    <td>14</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9537/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/activex/javascript/msxml/XMLDOMTextTest.java#l270'>nodeValue_empty()</a> IE</td>
+    <td class='numeric'>270</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='4'>XMLHTTPRequestTest</td>
+    <td>15</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9538/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/activex/javascript/msxml/XMLHTTPRequestTest.java#l579'>abort_sentAsync()</a> IE</td>
+    <td class='numeric'>579</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9538/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/activex/javascript/msxml/XMLHTTPRequestTest.java#l753'>open_methodNYI()</a> IE</td>
+    <td class='numeric'>753</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9538/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/activex/javascript/msxml/XMLHTTPRequestTest.java#l1031'>send_delete()</a> IE</td>
+    <td class='numeric'>1031</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9538/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/activex/javascript/msxml/XMLHTTPRequestTest.java#l1072'>send_options()</a> IE</td>
+    <td class='numeric'>1072</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>XMLSerializerTest</td>
+    <td>19</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9538/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/activex/javascript/msxml/XMLSerializerTest.java#l156'>htmlAttributes()</a> IE</td>
+    <td class='numeric'>156</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9538/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/activex/javascript/msxml/XMLSerializerTest.java#l105'>nameSpaces()</a> IE</td>
+    <td class='numeric'>105</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>FocusableElement2Test</td>
+    <td>21</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9583/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/FocusableElement2Test.java#l189'>focusOnNonFocusableElementShouldNotTriggerDocumentFocus()</a> FF, IE11</td>
+    <td class='numeric'>189</td>
+    <td>Test that focus() called on a non focusable element doesn't trigger document's focus handlers.</td>
+  </tr>
+  <tr>
+    <td rowspan='62'>HTMLElementsTest</td>
+    <td>22</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l102'>elementClosesItself_applet()</a> IE8</td>
+    <td class='numeric'>102</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l122'>elementClosesItself_article()</a> IE8</td>
+    <td class='numeric'>122</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l133'>elementClosesItself_aside()</a> IE8</td>
+    <td class='numeric'>133</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l144'>elementClosesItself_audio()</a> IE8</td>
+    <td class='numeric'>144</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l182'>elementClosesItself_basefont()</a> All</td>
+    <td class='numeric'>182</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l256'>elementClosesItself_button()</a> All</td>
+    <td class='numeric'>256</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l266'>elementClosesItself_canvas()</a> IE8</td>
+    <td class='numeric'>266</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l277'>elementClosesItself_caption()</a> IE8</td>
+    <td class='numeric'>277</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l1143'>elementClosesItself_col()</a> IE8</td>
+    <td class='numeric'>1143</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l1154'>elementClosesItself_colgroup()</a> IE8</td>
+    <td class='numeric'>1154</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l315'>elementClosesItself_datalist()</a> IE8</td>
+    <td class='numeric'>315</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l389'>elementClosesItself_embed()</a> All</td>
+    <td class='numeric'>389</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l417'>elementClosesItself_figcaption()</a> IE8</td>
+    <td class='numeric'>417</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l428'>elementClosesItself_figure()</a> IE8</td>
+    <td class='numeric'>428</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l448'>elementClosesItself_footer()</a> IE8</td>
+    <td class='numeric'>448</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l459'>elementClosesItself_form()</a> IE8</td>
+    <td class='numeric'>459</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l469'>elementClosesItself_frame()</a> FF, IE11</td>
+    <td class='numeric'>469</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l480'>elementClosesItself_frameset()</a> All</td>
+    <td class='numeric'>480</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l491'>elementClosesItself_h1()</a> IE8</td>
+    <td class='numeric'>491</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l502'>elementClosesItself_h2()</a> IE8</td>
+    <td class='numeric'>502</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l513'>elementClosesItself_h3()</a> IE8</td>
+    <td class='numeric'>513</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l524'>elementClosesItself_h4()</a> IE8</td>
+    <td class='numeric'>524</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l535'>elementClosesItself_h5()</a> IE8</td>
+    <td class='numeric'>535</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l546'>elementClosesItself_h6()</a> IE8</td>
+    <td class='numeric'>546</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l566'>elementClosesItself_header()</a> IE8</td>
+    <td class='numeric'>566</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l586'>elementClosesItself_html()</a> FF, IE11</td>
+    <td class='numeric'>586</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l597'>elementClosesItself_iframe()</a> IE8</td>
+    <td class='numeric'>597</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l617'>elementClosesItself_image()</a> All</td>
+    <td class='numeric'>617</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l645'>elementClosesItself_isindex()</a> All</td>
+    <td class='numeric'>645</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l673'>elementClosesItself_keygen()</a> IE8, FF31</td>
+    <td class='numeric'>673</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>52</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l694'>elementClosesItself_legend()</a> IE8</td>
+    <td class='numeric'>694</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l750'>elementClosesItself_mark()</a> IE8</td>
+    <td class='numeric'>750</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l779'>elementClosesItself_meter()</a> IE8</td>
+    <td class='numeric'>779</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>55</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l790'>elementClosesItself_multicol()</a> IE8</td>
+    <td class='numeric'>790</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l811'>elementClosesItself_nav()</a> IE8</td>
+    <td class='numeric'>811</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l822'>elementClosesItself_nextid()</a> FF, IE11</td>
+    <td class='numeric'>822</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>58</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l801'>elementClosesItself_nobr()</a> All</td>
+    <td class='numeric'>801</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>59</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l833'>elementClosesItself_noembed()</a> IE8</td>
+    <td class='numeric'>833</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l844'>elementClosesItself_noframes()</a> IE8</td>
+    <td class='numeric'>844</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>61</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l865'>elementClosesItself_object()</a> IE8</td>
+    <td class='numeric'>865</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>62</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l885'>elementClosesItself_optgroup()</a> All</td>
+    <td class='numeric'>885</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>63</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l896'>elementClosesItself_option()</a> All</td>
+    <td class='numeric'>896</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>64</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l906'>elementClosesItself_output()</a> IE8</td>
+    <td class='numeric'>906</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>65</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l953'>elementClosesItself_progress()</a> IE8</td>
+    <td class='numeric'>953</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>66</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l975'>elementClosesItself_rp()</a> IE8</td>
+    <td class='numeric'>975</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>67</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l986'>elementClosesItself_rt()</a> IE8</td>
+    <td class='numeric'>986</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>68</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l964'>elementClosesItself_ruby()</a> FF, IE11</td>
+    <td class='numeric'>964</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>69</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l1015'>elementClosesItself_script()</a> All</td>
+    <td class='numeric'>1015</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>70</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l1026'>elementClosesItself_section()</a> IE8</td>
+    <td class='numeric'>1026</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>71</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l1055'>elementClosesItself_source()</a> All</td>
+    <td class='numeric'>1055</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>72</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l1065'>elementClosesItself_spacer()</a> FF, IE11</td>
+    <td class='numeric'>1065</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>73</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l1103'>elementClosesItself_style()</a> IE8</td>
+    <td class='numeric'>1103</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>74</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l1132'>elementClosesItself_table()</a> IE8</td>
+    <td class='numeric'>1132</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>75</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l1165'>elementClosesItself_tbody()</a> IE8</td>
+    <td class='numeric'>1165</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>76</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l1176'>elementClosesItself_td()</a> IE8</td>
+    <td class='numeric'>1176</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>77</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l1218'>elementClosesItself_tfoot()</a> IE8</td>
+    <td class='numeric'>1218</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>78</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l1187'>elementClosesItself_th()</a> IE8</td>
+    <td class='numeric'>1187</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>79</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l1229'>elementClosesItself_thead()</a> IE8</td>
+    <td class='numeric'>1229</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>80</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l1249'>elementClosesItself_time()</a> IE8</td>
+    <td class='numeric'>1249</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>81</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l1260'>elementClosesItself_title()</a> FF, IE11</td>
+    <td class='numeric'>1260</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>82</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l1198'>elementClosesItself_tr()</a> IE8</td>
+    <td class='numeric'>1198</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>83</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9609/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLElementsTest.java#l1298'>elementClosesItself_video()</a> IE8</td>
+    <td class='numeric'>1298</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='63'>HTMLParser2Test</td>
+    <td>84</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l348'>childNodes_applet()</a> IE8</td>
+    <td class='numeric'>348</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>85</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l359'>childNodes_area()</a> All</td>
+    <td class='numeric'>359</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>86</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l370'>childNodes_article()</a> All</td>
+    <td class='numeric'>370</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>87</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l381'>childNodes_aside()</a> All</td>
+    <td class='numeric'>381</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>88</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l392'>childNodes_audio()</a> IE8</td>
+    <td class='numeric'>392</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>89</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l424'>childNodes_basefont()</a> FF, IE11</td>
+    <td class='numeric'>424</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>90</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l403'>childNodes_bgsound()</a> IE8</td>
+    <td class='numeric'>403</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>91</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l475'>childNodes_body()</a> FF, IE11</td>
+    <td class='numeric'>475</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>92</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l496'>childNodes_br()</a> All</td>
+    <td class='numeric'>496</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>93</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l507'>childNodes_button()</a> IE8</td>
+    <td class='numeric'>507</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>94</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l518'>childNodes_canvas()</a> IE8</td>
+    <td class='numeric'>518</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>95</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l529'>childNodes_caption()</a> IE8</td>
+    <td class='numeric'>529</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>96</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1437'>childNodes_col()</a> IE8</td>
+    <td class='numeric'>1437</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>97</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1448'>childNodes_colgroup()</a> IE8</td>
+    <td class='numeric'>1448</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>98</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l570'>childNodes_datalist()</a> IE8</td>
+    <td class='numeric'>570</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>99</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l651'>childNodes_embed()</a> All</td>
+    <td class='numeric'>651</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l682'>childNodes_figcaption()</a> All</td>
+    <td class='numeric'>682</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l693'>childNodes_figure()</a> All</td>
+    <td class='numeric'>693</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>102</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l725'>childNodes_footer()</a> All</td>
+    <td class='numeric'>725</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>103</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l714'>childNodes_form()</a> IE8</td>
+    <td class='numeric'>714</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>104</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l736'>childNodes_frame()</a> All</td>
+    <td class='numeric'>736</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>105</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l747'>childNodes_frameset()</a> All</td>
+    <td class='numeric'>747</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>106</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l828'>childNodes_header()</a> All</td>
+    <td class='numeric'>828</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>107</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l869'>childNodes_image()</a> IE8, IE11, FF</td>
+    <td class='numeric'>869</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>108</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l880'>childNodes_img()</a> IE8</td>
+    <td class='numeric'>880</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>109</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l901'>childNodes_isindex()</a> FF, IE11</td>
+    <td class='numeric'>901</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>110</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l933'>childNodes_keygen()</a> All</td>
+    <td class='numeric'>933</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>111</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l954'>childNodes_legend()</a> All</td>
+    <td class='numeric'>954</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>112</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l985'>childNodes_link()</a> IE8</td>
+    <td class='numeric'>985</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>113</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1016'>childNodes_mark()</a> IE8</td>
+    <td class='numeric'>1016</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>114</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1037'>childNodes_meta()</a> IE8</td>
+    <td class='numeric'>1037</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>115</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1048'>childNodes_meter()</a> IE8</td>
+    <td class='numeric'>1048</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>116</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1059'>childNodes_multicol()</a> IE8</td>
+    <td class='numeric'>1059</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>117</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1070'>childNodes_nav()</a> All</td>
+    <td class='numeric'>1070</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>118</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1081'>childNodes_nextid()</a> All</td>
+    <td class='numeric'>1081</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>119</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1152'>childNodes_optgroup()</a> All</td>
+    <td class='numeric'>1152</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>120</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1163'>childNodes_option()</a> All</td>
+    <td class='numeric'>1163</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>121</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1174'>childNodes_output()</a> IE8</td>
+    <td class='numeric'>1174</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>122</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1195'>childNodes_param()</a> All</td>
+    <td class='numeric'>1195</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>123</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1206'>childNodes_plaintext()</a> All</td>
+    <td class='numeric'>1206</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>124</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1227'>childNodes_progress()</a> IE8</td>
+    <td class='numeric'>1227</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>125</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1270'>childNodes_rp()</a> All</td>
+    <td class='numeric'>1270</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>126</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1259'>childNodes_rt()</a> All</td>
+    <td class='numeric'>1259</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>127</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1248'>childNodes_ruby()</a> IE8</td>
+    <td class='numeric'>1248</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>128</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1301'>childNodes_script()</a> All</td>
+    <td class='numeric'>1301</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>129</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1312'>childNodes_section()</a> All</td>
+    <td class='numeric'>1312</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>130</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1323'>childNodes_select()</a> IE8</td>
+    <td class='numeric'>1323</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>131</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1344'>childNodes_source()</a> All</td>
+    <td class='numeric'>1344</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>132</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1355'>childNodes_spacer()</a> All</td>
+    <td class='numeric'>1355</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>133</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1426'>childNodes_table()</a> FF, IE11</td>
+    <td class='numeric'>1426</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>134</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1459'>childNodes_tbody()</a> IE8</td>
+    <td class='numeric'>1459</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>135</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1470'>childNodes_td()</a> IE8</td>
+    <td class='numeric'>1470</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>136</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1503'>childNodes_textarea()</a> IE8</td>
+    <td class='numeric'>1503</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>137</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1514'>childNodes_tfoot()</a> IE8</td>
+    <td class='numeric'>1514</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>138</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1481'>childNodes_th()</a> IE8</td>
+    <td class='numeric'>1481</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>139</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1525'>childNodes_thead()</a> IE8</td>
+    <td class='numeric'>1525</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>140</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1546'>childNodes_time()</a> IE8</td>
+    <td class='numeric'>1546</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>141</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1557'>childNodes_title()</a> FF, IE11</td>
+    <td class='numeric'>1557</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>142</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1492'>childNodes_tr()</a> IE8</td>
+    <td class='numeric'>1492</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>143</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1598'>childNodes_video()</a> IE8</td>
+    <td class='numeric'>1598</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>144</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l1609'>childNodes_wbr()</a> IE8</td>
+    <td class='numeric'>1609</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>145</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l51'>testHtmlTableTextAroundTD()</a> FF, IE11</td>
+    <td class='numeric'>51</td>
+    <td>Malformed HTML: &lt;/td&gt;some text&lt;/tr&gt; =&gt; text comes before the table.</td>
+  </tr>
+  <tr>
+    <td>146</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser2Test.java#l104'>unclosedCommentsInScript()</a> All</td>
+    <td class='numeric'>104</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='4'>HTMLParser4Test</td>
+    <td>147</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9095/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser4Test.java#l152'>badlyFormedHTML_scriptAfterHtml()</a> All</td>
+    <td class='numeric'>152</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>148</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9095/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser4Test.java#l122'>badlyFormedHTML_scriptBeforeDoctype()</a> IE8</td>
+    <td class='numeric'>122</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>149</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9095/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser4Test.java#l92'>badlyFormedHTML_scriptBeforeHead()</a> IE8</td>
+    <td class='numeric'>92</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>150</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9095/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HTMLParser4Test.java#l481'>setCompleteHtmlToHTML_innerHTML()</a> CHROME, FF, IE11</td>
+    <td class='numeric'>481</td>
+    <td>Test for a case where complete HTML page is set in innerHTML of HTML tag. IE8 throws JavaScript error as innerHTML of HTML is read only. Others replace the current content of the HTML node by the new one.</td>
+  </tr>
+  <tr>
+    <td>HtmlAnchorTest</td>
+    <td>151</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9528/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlAnchorTest.java#l394'>doubleClick()</a> FF</td>
+    <td class='numeric'>394</td>
+    <td>FF behaves that strange.</td>
+  </tr>
+  <tr>
+    <td rowspan='6'>HtmlButton2Test</td>
+    <td>152</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9449/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlButton2Test.java#l635'>internalDifferentFrom()</a> All</td>
+    <td class='numeric'>635</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>153</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9449/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlButton2Test.java#l574'>submitWithoutTypeExternal()</a> FF</td>
+    <td class='numeric'>574</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>154</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9449/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlButton2Test.java#l513'>typeSubmitExternal()</a> FF</td>
+    <td class='numeric'>513</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>155</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9449/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlButton2Test.java#l370'>typeUnknown()</a> IE11, FF</td>
+    <td class='numeric'>370</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>156</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9449/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlButton2Test.java#l482'>typeUnknownExternal()</a> FF</td>
+    <td class='numeric'>482</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>157</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9449/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlButton2Test.java#l303'>valueAttributeNode()</a> IE8</td>
+    <td class='numeric'>303</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HtmlCheckBoxInput2Test</td>
+    <td>158</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlCheckBoxInput2Test.java#l488'>onchangeFires2()</a> CHROME</td>
+    <td class='numeric'>488</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HtmlElement2Test</td>
+    <td>159</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9689/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlElement2Test.java#l86'>onpropertychange2()</a> IE8</td>
+    <td class='numeric'>86</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HtmlFileInput2Test</td>
+    <td>160</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9491/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlFileInput2Test.java#l60'>contentType()</a> IE</td>
+    <td class='numeric'>60</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HtmlFormTest</td>
+    <td>161</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9547/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlFormTest.java#l1386'>encoding()</a> FF</td>
+    <td class='numeric'>1386</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HtmlFrame2Test</td>
+    <td>162</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9116/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlFrame2Test.java#l157'>frameOnloadFrameInFrame()</a> IE8</td>
+    <td class='numeric'>157</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HtmlFrameSetTest</td>
+    <td>163</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlFrameSetTest.java#l363'>onunload()</a> All</td>
+    <td class='numeric'>363</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>HtmlImageInput2Test</td>
+    <td>164</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9157/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlImageInput2Test.java#l41'>testClick_NoPosition()</a> CHROME, IE</td>
+    <td class='numeric'>41</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>165</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9157/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlImageInput2Test.java#l65'>testClick_NoPosition_NoValue()</a> CHROME, IE</td>
+    <td class='numeric'>65</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HtmlImageTest</td>
+    <td>166</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlImageTest.java#l110'>useMapClick_CircleRadiusPercentage()</a> All</td>
+    <td class='numeric'>110</td>
+    <td>Tests circle radius of percentage value.</td>
+  </tr>
+  <tr>
+    <td>HtmlIsIndex2Test</td>
+    <td>167</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlIsIndex2Test.java#l42'>simpleScriptable()</a> FF, IE11</td>
+    <td class='numeric'>42</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HtmlPageTest</td>
+    <td>168</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9266/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlPageTest.java#l1209'>testNoSlashURL()</a> IE</td>
+    <td class='numeric'>1209</td>
+    <td>Test for bug 1714767.</td>
+  </tr>
+  <tr>
+    <td>HtmlRadioButtonInput2Test</td>
+    <td>169</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9289/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlRadioButtonInput2Test.java#l900'>clickShouldTriggerOnchange()</a> IE8</td>
+    <td class='numeric'>900</td>
+    <td>Call to JS function click() should trigger the onchange handler but neither the onfocus handler nor the mousedown/up handlers.</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>HtmlTableRowTest</td>
+    <td>170</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlTableRowTest.java#l232'>testCloneScriptCanSetDisabledOnCell()</a> FF</td>
+    <td class='numeric'>232</td>
+    <td>Ensure that a script can set the disabled property on a DOM node.</td>
+  </tr>
+  <tr>
+    <td>171</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/HtmlTableRowTest.java#l268'>testCloneScriptSetDisabledIndependentOfOriginal()</a> FF</td>
+    <td class='numeric'>268</td>
+    <td>Ensure that a script setting disabled on the original does not affect that same attribute on the clone.</td>
+  </tr>
+  <tr>
+    <td rowspan='3'>MalformedHtmlTest</td>
+    <td>172</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9532/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/MalformedHtmlTest.java#l197'>missingDoubleQuote()</a> IE8</td>
+    <td class='numeric'>197</td>
+    <td>Regression test for bug 2838901.</td>
+  </tr>
+  <tr>
+    <td>173</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9532/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/MalformedHtmlTest.java#l182'>missingSingleQuote()</a> IE8</td>
+    <td class='numeric'>182</td>
+    <td>Regression test for bug 2838901.</td>
+  </tr>
+  <tr>
+    <td>174</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9532/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/html/MalformedHtmlTest.java#l286'>nestedAnchorInDivision()</a> All</td>
+    <td class='numeric'>286</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='4'>IEWeirdSyntaxTest</td>
+    <td>175</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/IEWeirdSyntaxTest.java#l60'>semicolonAndComment_before_catchAndFinally()</a> IE</td>
+    <td class='numeric'>60</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>176</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/IEWeirdSyntaxTest.java#l49'>semicolon_before_catch()</a> IE</td>
+    <td class='numeric'>49</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>177</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/IEWeirdSyntaxTest.java#l37'>semicolon_before_finally()</a> IE</td>
+    <td class='numeric'>37</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>178</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/IEWeirdSyntaxTest.java#l101'>windowDotHandlerFunction()</a> IE</td>
+    <td class='numeric'>101</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='5'>JavaScriptEngine2Test</td>
+    <td>179</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9586/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/JavaScriptEngine2Test.java#l177'>constructor()</a> FF</td>
+    <td class='numeric'>177</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>180</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9586/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/JavaScriptEngine2Test.java#l314'>function_toStringValue()</a> All</td>
+    <td class='numeric'>314</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>181</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9586/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/JavaScriptEngine2Test.java#l397'>nativeFunction_toStringValue()</a> IE</td>
+    <td class='numeric'>397</td>
+    <td>String value of native functions starts with \n on IE.</td>
+  </tr>
+  <tr>
+    <td>182</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9586/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/JavaScriptEngine2Test.java#l418'>onloadJavascriptFunction()</a> All</td>
+    <td class='numeric'>418</td>
+    <td>Regression test for bug https://sf.net/tracker/?func=detail&atid=448266&aid=1609944&group_id=47038.</td>
+  </tr>
+  <tr>
+    <td>183</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9586/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/JavaScriptEngine2Test.java#l152'>variableNotDefined()</a> IE</td>
+    <td class='numeric'>152</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>NativeArrayTest</td>
+    <td>184</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9576/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/NativeArrayTest.java#l39'>sort()</a> FF, IE8, IE11</td>
+    <td class='numeric'>39</td>
+    <td>Test for sort algorithm used (when sort is called with callback).</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>NativeErrorTest</td>
+    <td>185</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8947/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/NativeErrorTest.java#l39'>stack()</a> CHROME, FF, IE11</td>
+    <td class='numeric'>39</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>186</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8947/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/NativeErrorTest.java#l76'>stackNewError()</a> CHROME, FF, IE11</td>
+    <td class='numeric'>76</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='3'>SimpleScriptable2Test</td>
+    <td>187</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9632/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/SimpleScriptable2Test.java#l109'>hostClassNames()</a> CHROME, FF, IE8</td>
+    <td class='numeric'>109</td>
+    <td>Test the host class names match the Firefox (w3c names). @see <a   href="http://java.sun.com/j2se/1.5.0/docs/guide/plugin/dom/org/w3c/dom/html/package-summary.html">DOM API</a></td>
+  </tr>
+  <tr>
+    <td>188</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9632/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/SimpleScriptable2Test.java#l212'>isParentOf_CSSStyleDeclaration_ComputedCSSStyleDeclaration()</a> CHROME, FF, IE11</td>
+    <td class='numeric'>212</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>189</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9632/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/SimpleScriptable2Test.java#l455'>lookupGetter()</a> IE11</td>
+    <td class='numeric'>455</td>
+    <td>Tests for the result of __lookupGetter__. Until 20.06.2014 the result was wrongly a MemberBox. Converting it to a boolean was producing warning messages on the error output.</td>
+  </tr>
+  <tr>
+    <td>AttrTest</td>
+    <td>190</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9568/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/AttrTest.java#l253'>value()</a> IE8</td>
+    <td class='numeric'>253</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>BeforeUnloadEventTest</td>
+    <td>191</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9523/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/BeforeUnloadEventTest.java#l138'>dispatchEvent_event()</a> CHROME</td>
+    <td class='numeric'>138</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Document2Test</td>
+    <td>192</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9669/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/Document2Test.java#l406'>queryCommandEnabled()</a> FF</td>
+    <td class='numeric'>406</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>DocumentFragmentTest</td>
+    <td>193</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9583/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/DocumentFragmentTest.java#l39'>getComputedStyleOnChild()</a> FF, IE11</td>
+    <td class='numeric'>39</td>
+    <td>Regression test for bug 3191431 on computation from child selector in a document fragment.</td>
+  </tr>
+  <tr>
+    <td rowspan='3'>DocumentTest</td>
+    <td>194</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9583/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/DocumentTest.java#l1120'>all_AsBoolean()</a> FF, IE11</td>
+    <td class='numeric'>1120</td>
+    <td>Firefox supports document.all, but it is "hidden".</td>
+  </tr>
+  <tr>
+    <td>195</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9583/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/DocumentTest.java#l1503'>documentCloneNode()</a> IE8</td>
+    <td class='numeric'>1503</td>
+    <td>Tests <tt>document.cloneNode()</tt>. IE specific.</td>
+  </tr>
+  <tr>
+    <td>196</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9583/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/DocumentTest.java#l1979'>setActive()</a> IE</td>
+    <td class='numeric'>1979</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>DocumentTypeTest</td>
+    <td>197</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9424/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/DocumentTypeTest.java#l38'>doctype()</a> CHROME</td>
+    <td class='numeric'>38</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>198</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9424/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/DocumentTypeTest.java#l80'>doctype_xml()</a> CHROME</td>
+    <td class='numeric'>80</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>ElementTest</td>
+    <td>199</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9625/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/ElementTest.java#l758'>enumeratedProperties()</a> FF</td>
+    <td class='numeric'>758</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Event2Test</td>
+    <td>200</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9381/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/Event2Test.java#l42'>optionClick()</a> IE11</td>
+    <td class='numeric'>42</td>
+    <td>Test event order for clicking on a select option.</td>
+  </tr>
+  <tr>
+    <td>Event3Test</td>
+    <td>201</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9641/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/Event3Test.java#l143'>testIE_EventBubbling()</a> All</td>
+    <td class='numeric'>143</td>
+    <td>Test for event bubbling in IE.</td>
+  </tr>
+  <tr>
+    <td>EventTest</td>
+    <td>202</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9599/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/EventTest.java#l755'>document_focus()</a> FF, IE11</td>
+    <td class='numeric'>755</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Location2Test</td>
+    <td>203</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/Location2Test.java#l565'>onlick_set_location()</a> CHROME, FF</td>
+    <td class='numeric'>565</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>NamedNodeMapTest</td>
+    <td>204</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9367/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/NamedNodeMapTest.java#l37'>testAttributes()</a> All</td>
+    <td class='numeric'>37</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>NodeFilterTest</td>
+    <td>205</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/NodeFilterTest.java#l60'>constants_SHOW_ALL()</a> CHROME</td>
+    <td class='numeric'>60</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>NodeTest</td>
+    <td>206</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9622/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/NodeTest.java#l554'>compareDocumentPosition()</a> CHROME</td>
+    <td class='numeric'>554</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>207</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9622/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/NodeTest.java#l393'>testNodePrototype()</a> CHROME, FF, IE11</td>
+    <td class='numeric'>393</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='6'>ScreenTest</td>
+    <td>208</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9557/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/ScreenTest.java#l48'>availLeft()</a> IE8</td>
+    <td class='numeric'>48</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>209</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9557/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/ScreenTest.java#l60'>availTop()</a> IE8</td>
+    <td class='numeric'>60</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>210</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9557/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/ScreenTest.java#l146'>left()</a> IE8</td>
+    <td class='numeric'>146</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>211</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9557/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/ScreenTest.java#l192'>pixelDepth()</a> IE8</td>
+    <td class='numeric'>192</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>212</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9557/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/ScreenTest.java#l158'>top()</a> IE8</td>
+    <td class='numeric'>158</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>213</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9557/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/ScreenTest.java#l225'>updateInterval()</a> IE8</td>
+    <td class='numeric'>225</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Selection2Test</td>
+    <td>214</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9572/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/Selection2Test.java#l190'>extend()</a> CHROME</td>
+    <td class='numeric'>190</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>StorageTest</td>
+    <td>215</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9658/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/StorageTest.java#l158'>localStorageShouldBeShared()</a> All</td>
+    <td class='numeric'>158</td>
+    <td>Note that this test will work only with WebDriver instances that support starting 2 instances in parallel.</td>
+  </tr>
+  <tr>
+    <td>TreeWalkerTest</td>
+    <td>216</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9511/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/TreeWalkerTest.java#l101'>getters2()</a> IE11</td>
+    <td class='numeric'>101</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='5'>Window2Test</td>
+    <td>217</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9594/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/Window2Test.java#l650'>changeHeightsAndWidths()</a> FF, IE11</td>
+    <td class='numeric'>650</td>
+    <td>Regression test for bug 2944261.</td>
+  </tr>
+  <tr>
+    <td>218</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9594/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/Window2Test.java#l899'>onbeforeunload()</a> IE8</td>
+    <td class='numeric'>899</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>219</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9594/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/Window2Test.java#l1311'>postMessage_exactURL()</a> FF</td>
+    <td class='numeric'>1311</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>220</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9594/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/Window2Test.java#l685'>scrolling1()</a> FF</td>
+    <td class='numeric'>685</td>
+    <td>Regression test for bug 2897457.</td>
+  </tr>
+  <tr>
+    <td>221</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9594/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/Window2Test.java#l250'>windowProperties()</a> FF</td>
+    <td class='numeric'>250</td>
+    <td>Test window properties that match Prototypes.</td>
+  </tr>
+  <tr>
+    <td rowspan='6'>Window3Test</td>
+    <td>222</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9559/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/Window3Test.java#l1072'>attachOnLoadEvent()</a> IE8</td>
+    <td class='numeric'>1072</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>223</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9559/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/Window3Test.java#l1301'>captureEvents()</a> IE8</td>
+    <td class='numeric'>1301</td>
+    <td>Test for 1225021.</td>
+  </tr>
+  <tr>
+    <td>224</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9559/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/Window3Test.java#l831'>elementsByName_changedAfterGet_nyi()</a> All</td>
+    <td class='numeric'>831</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>225</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9559/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/Window3Test.java#l1211'>evalScopeOtherWindow()</a> IE8</td>
+    <td class='numeric'>1211</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>226</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9559/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/Window3Test.java#l493'>frameByName()</a> IE</td>
+    <td class='numeric'>493</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>227</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9559/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/Window3Test.java#l73'>opener()</a> IE8</td>
+    <td class='numeric'>73</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>WindowTest</td>
+    <td>228</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9573/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/WindowTest.java#l1119'>showModalDialogWithButton()</a> All</td>
+    <td class='numeric'>1119</td>
+    <td>Test for the <tt>showModalDialog</tt> method. This tests blocking until the window gets closed.</td>
+  </tr>
+  <tr>
+    <td>XSLTProcessorTest</td>
+    <td>229</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9316/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/XSLTProcessorTest.java#l37'>test()</a> All</td>
+    <td class='numeric'>37</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>CSSCharsetRuleTest</td>
+    <td>230</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSCharsetRuleTest.java#l35'>simple()</a> IE</td>
+    <td class='numeric'>35</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>CSSPrimitiveValueTest</td>
+    <td>231</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9583/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSPrimitiveValueTest.java#l35'>test()</a> FF</td>
+    <td class='numeric'>35</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>CSSSelectorTest</td>
+    <td>232</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9555/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSSelectorTest.java#l697'>pseudoAfter()</a> IE8</td>
+    <td class='numeric'>697</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='3'>CSSStyleDeclaration2Test</td>
+    <td>233</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9601/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration2Test.java#l116'>width_like_properties_border()</a> All</td>
+    <td class='numeric'>116</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>234</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9601/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration2Test.java#l158'>width_like_properties_font()</a> All</td>
+    <td class='numeric'>158</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>235</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9601/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration2Test.java#l145'>width_like_properties_heightWidth()</a> FF</td>
+    <td class='numeric'>145</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='15'>CSSStyleDeclaration3Test</td>
+    <td>236</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9666/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration3Test.java#l281'>backgroundCssAttachment()</a> IE8</td>
+    <td class='numeric'>281</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>237</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9666/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration3Test.java#l292'>backgroundCssColorHex()</a> IE8</td>
+    <td class='numeric'>292</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>238</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9666/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration3Test.java#l192'>backgroundCssColorRed()</a> IE8</td>
+    <td class='numeric'>192</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>239</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9666/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration3Test.java#l203'>backgroundCssColorRgb()</a> IE8</td>
+    <td class='numeric'>203</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>240</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9666/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration3Test.java#l181'>backgroundCssEmpty()</a> IE8</td>
+    <td class='numeric'>181</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>241</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9666/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration3Test.java#l214'>backgroundCssImage()</a> All</td>
+    <td class='numeric'>214</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>242</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9666/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration3Test.java#l303'>backgroundCssMixed()</a> All</td>
+    <td class='numeric'>303</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>243</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9666/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration3Test.java#l314'>backgroundCssMixed2()</a> IE8</td>
+    <td class='numeric'>314</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>244</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9666/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration3Test.java#l236'>backgroundCssPosition()</a> IE8</td>
+    <td class='numeric'>236</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>245</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9666/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration3Test.java#l247'>backgroundCssPosition2()</a> IE8</td>
+    <td class='numeric'>247</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>246</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9666/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration3Test.java#l258'>backgroundCssPosition3()</a> IE8</td>
+    <td class='numeric'>258</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>247</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9666/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration3Test.java#l269'>backgroundCssPosition4()</a> IE</td>
+    <td class='numeric'>269</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>248</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9666/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration3Test.java#l225'>backgroundCssRepeat()</a> IE8</td>
+    <td class='numeric'>225</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>249</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9666/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration3Test.java#l38'>backgroundEmpty()</a> IE8</td>
+    <td class='numeric'>38</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>250</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9666/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclaration3Test.java#l113'>backgroundPosition4()</a> IE11</td>
+    <td class='numeric'>113</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='7'>CSSStyleDeclarationTest</td>
+    <td>251</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9606/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclarationTest.java#l1292'>caseInsensitive()</a> IE11</td>
+    <td class='numeric'>1292</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>252</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9606/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclarationTest.java#l891'>displayDefaultOverwritesNone()</a> IE11</td>
+    <td class='numeric'>891</td>
+    <td>Browsers are really strange.</td>
+  </tr>
+  <tr>
+    <td>253</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9606/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclarationTest.java#l216'>getPropertyValue()</a> FF</td>
+    <td class='numeric'>216</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>254</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9606/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclarationTest.java#l1424'>interceptSetter()</a> FF, IE11</td>
+    <td class='numeric'>1424</td>
+    <td>Test for a __lookupSetter__ bug affecting Hotmail when emulating Firefox. @see <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=491433">Rhino bug 491433</a></td>
+  </tr>
+  <tr>
+    <td>255</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9606/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclarationTest.java#l1453'>setToNull()</a> IE8</td>
+    <td class='numeric'>1453</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>256</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9606/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclarationTest.java#l334'>styleFilter()</a> FF, IE11</td>
+    <td class='numeric'>334</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>257</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9606/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleDeclarationTest.java#l67'>style_MultipleCssAttributes()</a> FF, IE11</td>
+    <td class='numeric'>67</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='4'>CSSStyleRuleTest</td>
+    <td>258</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9585/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleRuleTest.java#l178'>colon()</a> IE8</td>
+    <td class='numeric'>178</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>259</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9585/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleRuleTest.java#l147'>selectorText()</a> FF</td>
+    <td class='numeric'>147</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>260</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9585/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleRuleTest.java#l38'>test()</a> FF</td>
+    <td class='numeric'>38</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>261</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9585/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSStyleRuleTest.java#l114'>testReadOnly()</a> IE8</td>
+    <td class='numeric'>114</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>CSSValueTest</td>
+    <td>262</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9524/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/CSSValueTest.java#l35'>test()</a> FF</td>
+    <td class='numeric'>35</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='4'>ComputedCSSStyleDeclarationTest</td>
+    <td>263</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9665/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/ComputedCSSStyleDeclarationTest.java#l1018'>computedWidthOfHiddenElements()</a> FF, IE11</td>
+    <td class='numeric'>1018</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>264</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9665/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/ComputedCSSStyleDeclarationTest.java#l743'>defaultDisplayValues_PQ()</a> IE8</td>
+    <td class='numeric'>743</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>265</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9665/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/ComputedCSSStyleDeclarationTest.java#l1274'>getPropertyValue()</a> FF, CHROME, IE11</td>
+    <td class='numeric'>1274</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>266</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9665/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/css/ComputedCSSStyleDeclarationTest.java#l1242'>widthAuto()</a> IE8</td>
+    <td class='numeric'>1242</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='4'>DOMParserTest</td>
+    <td>267</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9579/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/dom/DOMParserTest.java#l148'>parseFromString_application_svgXml()</a> FF</td>
+    <td class='numeric'>148</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>268</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9579/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/dom/DOMParserTest.java#l251'>parseFromString_emptyString()</a> CHROME</td>
+    <td class='numeric'>251</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>269</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9579/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/dom/DOMParserTest.java#l224'>parseFromString_invalidXml()</a> CHROME</td>
+    <td class='numeric'>224</td>
+    <td>In 2.9-SNAPSHOT on 26.10.2010 this was causing an internal error in DOMParser.parseFromString.</td>
+  </tr>
+  <tr>
+    <td>270</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9579/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/dom/DOMParserTest.java#l59'>parseFromString_text_html()</a> CHROME, FF, IE11</td>
+    <td class='numeric'>59</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>GeolocationTest</td>
+    <td>271</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/geo/GeolocationTest.java#l53'>getCurrentPosition_enabled()</a> for now</td>
+    <td class='numeric'>53</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>HTMLAppletElementTest</td>
+    <td>272</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9279/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLAppletElementTest.java#l36'>getAlign()</a> IE8, IE11</td>
+    <td class='numeric'>36</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>273</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9279/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLAppletElementTest.java#l63'>setAlign()</a> IE8, IE11</td>
+    <td class='numeric'>63</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HTMLBaseElementTest</td>
+    <td>274</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLBaseElementTest.java#l34'>hrefAndTarget()</a> FF</td>
+    <td class='numeric'>34</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='3'>HTMLBaseFontElementTest</td>
+    <td>275</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLBaseFontElementTest.java#l124'>color()</a> FF, IE8</td>
+    <td class='numeric'>124</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>276</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLBaseFontElementTest.java#l94'>face()</a> FF</td>
+    <td class='numeric'>94</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>277</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLBaseFontElementTest.java#l64'>size()</a> FF</td>
+    <td class='numeric'>64</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HTMLButtonElementTest</td>
+    <td>278</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9449/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLButtonElementTest.java#l128'>getForm()</a> FF, IE8</td>
+    <td class='numeric'>128</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='4'>HTMLCollectionTest</td>
+    <td>279</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9621/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLCollectionTest.java#l101'>testFor_in()</a> FF, IE11</td>
+    <td class='numeric'>101</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>280</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9621/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLCollectionTest.java#l131'>testFor_in2()</a> FF, IE11</td>
+    <td class='numeric'>131</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>281</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9621/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLCollectionTest.java#l195'>testOutOfBoundAccess()</a> FF</td>
+    <td class='numeric'>195</td>
+    <td>Depending on the method used, out of bound access give different responses.</td>
+  </tr>
+  <tr>
+    <td>282</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9621/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLCollectionTest.java#l58'>testToStringFunction()</a> IE8</td>
+    <td class='numeric'>58</td>
+    <td>Test that <tt>toString</tt> is accessible.</td>
+  </tr>
+  <tr>
+    <td>HTMLDListElementTest</td>
+    <td>283</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9281/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDListElementTest.java#l115'>type()</a> FF, IE11</td>
+    <td class='numeric'>115</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HTMLDirectoryElementTest</td>
+    <td>284</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9281/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDirectoryElementTest.java#l115'>type()</a> FF, IE11</td>
+    <td class='numeric'>115</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HTMLDivElementTest</td>
+    <td>285</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9279/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDivElementTest.java#l68'>getAlign()</a> IE8, IE11</td>
+    <td class='numeric'>68</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HTMLDocument2Test</td>
+    <td>286</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9618/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDocument2Test.java#l50'>readyState()</a> IE</td>
+    <td class='numeric'>50</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='15'>HTMLDocumentTest</td>
+    <td>287</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9670/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDocumentTest.java#l763'>all_scriptableToString()</a> CHROME, FF, IE11</td>
+    <td class='numeric'>763</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>288</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9670/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDocumentTest.java#l2108'>documentMode_doctypeHTML5()</a> IE8</td>
+    <td class='numeric'>2108</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>289</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9670/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDocumentTest.java#l2083'>documentMode_doctypeStrict()</a> IE8</td>
+    <td class='numeric'>2083</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>290</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9670/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDocumentTest.java#l2095'>documentMode_doctypeTransitional()</a> IE8</td>
+    <td class='numeric'>2095</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>291</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9670/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDocumentTest.java#l2163'>documentMode_metaEmulateIE8_doctypeStrict()</a> IE8</td>
+    <td class='numeric'>2163</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>292</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9670/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDocumentTest.java#l2130'>documentMode_metaIE8()</a> IE8, IE11</td>
+    <td class='numeric'>2130</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>293</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9670/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDocumentTest.java#l2141'>documentMode_metaIE8_doctypeStrict()</a> IE8, IE11</td>
+    <td class='numeric'>2141</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>294</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9670/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDocumentTest.java#l2176'>documentMode_metaIE9()</a> IE8</td>
+    <td class='numeric'>2176</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>295</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9670/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDocumentTest.java#l2188'>documentMode_metaIEEdge()</a> IE8</td>
+    <td class='numeric'>2188</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>296</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9670/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDocumentTest.java#l783'>frames()</a> IE</td>
+    <td class='numeric'>783</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>297</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9670/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDocumentTest.java#l1170'>getElementsByName_changedAfterGet_nested_nyi()</a> All</td>
+    <td class='numeric'>1170</td>
+    <td>Contains the cases of test {@link #getElementsByName_changedAfterGet_nested()} that are not yet implemented.<br> If a case gets implemented, move it to {@link #getElementsByName_changedAfterGet_nested()}.</td>
+  </tr>
+  <tr>
+    <td>298</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9670/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDocumentTest.java#l1059'>getElementsByName_changedAfterGet_nyi()</a> All</td>
+    <td class='numeric'>1059</td>
+    <td>Contains the cases of test {@link #getElementsByName_changedAfterGet()} that are not yet implemented.<br> If a case gets implemented, move it to {@link #getElementsByName_changedAfterGet()}.</td>
+  </tr>
+  <tr>
+    <td>299</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9670/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDocumentTest.java#l874'>getElementsByName_elements()</a> IE8</td>
+    <td class='numeric'>874</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>300</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9670/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDocumentTest.java#l1506'>getElementsByTagName3()</a> IE8</td>
+    <td class='numeric'>1506</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>301</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9670/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDocumentTest.java#l583'>prefix()</a> All</td>
+    <td class='numeric'>583</td>
+    <td>Test that <tt>document.forms.form_name</tt> should be evaluated to <tt>undefined</tt> if the form has a prefix.</td>
+  </tr>
+  <tr>
+    <td>HTMLDocumentWrite2Test</td>
+    <td>302</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9246/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLDocumentWrite2Test.java#l193'>writeInNewWindowAndReadFormCollection()</a> All</td>
+    <td class='numeric'>193</td>
+    <td>Regression test for bug 2921851.</td>
+  </tr>
+  <tr>
+    <td rowspan='3'>HTMLElement2Test</td>
+    <td>303</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9621/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLElement2Test.java#l1126'>offsetLeft_PositionFixed()</a> FF</td>
+    <td class='numeric'>1126</td>
+    <td>Test case for issue #1626.</td>
+  </tr>
+  <tr>
+    <td>304</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9621/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLElement2Test.java#l543'>offsetWidth_calculatedBasedOnPage()</a> All</td>
+    <td class='numeric'>543</td>
+    <td>Value of offsetWidth is currently wrong when width is a % of the page.</td>
+  </tr>
+  <tr>
+    <td>305</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9621/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLElement2Test.java#l63'>scopeName2()</a> IE8</td>
+    <td class='numeric'>63</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='14'>HTMLElementTest</td>
+    <td>306</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9643/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLElementTest.java#l3336'>attributeNS()</a> FF</td>
+    <td class='numeric'>3336</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>307</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9643/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLElementTest.java#l229'>attributesAccess()</a> All</td>
+    <td class='numeric'>229</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>308</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9643/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLElementTest.java#l1757'>childrenFunctionAccess()</a> FF</td>
+    <td class='numeric'>1757</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>309</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9643/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLElementTest.java#l3143'>clearAttributes()</a> All</td>
+    <td class='numeric'>3143</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>310</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9643/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLElementTest.java#l2324'>currentStyle()</a> IE</td>
+    <td class='numeric'>2324</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>311</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9643/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLElementTest.java#l539'>getAttribute_eventHandler()</a> IE8</td>
+    <td class='numeric'>539</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>312</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9643/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLElementTest.java#l2417'>getBoundingClientRect()</a> FF31</td>
+    <td class='numeric'>2417</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>313</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9643/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLElementTest.java#l2496'>getClientRects()</a> All</td>
+    <td class='numeric'>2496</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>314</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9643/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLElementTest.java#l1088'>getOuterHTMLFromUnclosedParagraph()</a> FF, IE11</td>
+    <td class='numeric'>1088</td>
+    <td>Test getting <code>outerHTML</code> of an unclosed <code>p</code>.<br> Closing <code>p</code> is optional.</td>
+  </tr>
+  <tr>
+    <td>315</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9643/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLElementTest.java#l196'>getSetAttributeNS()</a> FF</td>
+    <td class='numeric'>196</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>316</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9643/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLElementTest.java#l5437'>insertAdjacentText()</a> IE8</td>
+    <td class='numeric'>5437</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>317</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9643/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLElementTest.java#l4804'>nodeNameVsOuterElement()</a> IE8</td>
+    <td class='numeric'>4804</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>318</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9643/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLElementTest.java#l4139'>outerHTML_image()</a> CHROME, FF</td>
+    <td class='numeric'>4139</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>319</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9643/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLElementTest.java#l1362'>setOuterHTMLAddMultipleSelfClosingBlock()</a> FF, IE8, IE11</td>
+    <td class='numeric'>1362</td>
+    <td>Test setting <code>outerHTML</code> to two XHTML self-closing <code>div</code> (block).</td>
+  </tr>
+  <tr>
+    <td rowspan='6'>HTMLEmbedElementTest</td>
+    <td>320</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLEmbedElementTest.java#l37'>getAlign()</a> All</td>
+    <td class='numeric'>37</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>321</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLEmbedElementTest.java#l114'>getHeight()</a> IE8, IE11</td>
+    <td class='numeric'>114</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>322</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLEmbedElementTest.java#l172'>getWidth()</a> IE8, IE11</td>
+    <td class='numeric'>172</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>323</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLEmbedElementTest.java#l70'>setAlign()</a> IE8, FF</td>
+    <td class='numeric'>70</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>324</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLEmbedElementTest.java#l141'>setHeight()</a> IE8, IE11</td>
+    <td class='numeric'>141</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>325</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLEmbedElementTest.java#l199'>setWidth()</a> IE8, IE11</td>
+    <td class='numeric'>199</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>HTMLFieldSetElementTest</td>
+    <td>326</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9279/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLFieldSetElementTest.java#l38'>getAlign()</a> IE8, IE11</td>
+    <td class='numeric'>38</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>327</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9279/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLFieldSetElementTest.java#l73'>setAlign()</a> IE8, IE11</td>
+    <td class='numeric'>73</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>HTMLFormElementTest</td>
+    <td>328</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9587/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLFormElementTest.java#l716'>onsubmitNull()</a> IE8</td>
+    <td class='numeric'>716</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>329</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9587/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLFormElementTest.java#l1135'>submitTriggersRequestNotParsed()</a> FF</td>
+    <td class='numeric'>1135</td>
+    <td>For IE8: calling form.submit() immediately triggers a request but only the last response for a page is parsed. For FF10+ and Chrome: only one request, the last one.</td>
+  </tr>
+  <tr>
+    <td rowspan='3'>HTMLFrameElement2Test</td>
+    <td>330</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLFrameElement2Test.java#l146'>onloadNull()</a> FF, IE8, IE11</td>
+    <td class='numeric'>146</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>331</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLFrameElement2Test.java#l516'>windowLocationAssignOnload()</a> FF</td>
+    <td class='numeric'>516</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>332</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLFrameElement2Test.java#l595'>windowLocationSetOnload()</a> All</td>
+    <td class='numeric'>595</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>HTMLHRElementTest</td>
+    <td>333</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9279/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLHRElementTest.java#l36'>getAlign()</a> All</td>
+    <td class='numeric'>36</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>334</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9279/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLHRElementTest.java#l61'>setAlign()</a> IE8, IE11</td>
+    <td class='numeric'>61</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HTMLHtmlElementTest</td>
+    <td>335</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLHtmlElementTest.java#l63'>HTMLHtmlElement_toString()</a> FF</td>
+    <td class='numeric'>63</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>HTMLIFrameElement2Test</td>
+    <td>336</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9279/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLIFrameElement2Test.java#l745'>getAlign()</a> IE8, IE11</td>
+    <td class='numeric'>745</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>337</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9279/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLIFrameElement2Test.java#l772'>setAlign()</a> IE8, IE11</td>
+    <td class='numeric'>772</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>HTMLIFrameElement3Test</td>
+    <td>338</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9120/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLIFrameElement3Test.java#l448'>idByName()</a> IE</td>
+    <td class='numeric'>448</td>
+    <td>IE: getElementById() returns a different object than with direct 'id' variable.</td>
+  </tr>
+  <tr>
+    <td>339</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9120/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLIFrameElement3Test.java#l374'>readyState_IFrame()</a> FF</td>
+    <td class='numeric'>374</td>
+    <td>Test the ReadyState which is an IE feature.</td>
+  </tr>
+  <tr>
+    <td rowspan='4'>HTMLImageElementTest</td>
+    <td>340</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9576/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLImageElementTest.java#l254'>getAlign()</a> FF</td>
+    <td class='numeric'>254</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>341</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9576/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLImageElementTest.java#l291'>setAlign()</a> FF</td>
+    <td class='numeric'>291</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>342</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9576/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLImageElementTest.java#l455'>testWidthHeightBlankSource()</a> IE</td>
+    <td class='numeric'>455</td>
+    <td>Test that image's width and height are numbers.</td>
+  </tr>
+  <tr>
+    <td>343</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9576/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLImageElementTest.java#l412'>testWidthHeightEmptySource()</a> IE</td>
+    <td class='numeric'>412</td>
+    <td>Test that image's width and height are numbers.</td>
+  </tr>
+  <tr>
+    <td rowspan='4'>HTMLInputElementTest</td>
+    <td>344</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9576/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLInputElementTest.java#l771'>getAlign()</a> IE8, IE11</td>
+    <td class='numeric'>771</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>345</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9576/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLInputElementTest.java#l915'>getAttributeAndSetValueNull()</a> FF, IE11</td>
+    <td class='numeric'>915</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>346</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9576/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLInputElementTest.java#l801'>setAlign()</a> IE8, IE11</td>
+    <td class='numeric'>801</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>347</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9576/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLInputElementTest.java#l706'>typeCase()</a> FF, IE11</td>
+    <td class='numeric'>706</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>HTMLLegendElementTest</td>
+    <td>348</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9279/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLLegendElementTest.java#l79'>getAlign()</a> All</td>
+    <td class='numeric'>79</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>349</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9279/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLLegendElementTest.java#l107'>setAlign()</a> IE8, IE11</td>
+    <td class='numeric'>107</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HTMLMenuElementTest</td>
+    <td>350</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9158/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLMenuElementTest.java#l112'>type()</a> All</td>
+    <td class='numeric'>112</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>HTMLOptionElement2Test</td>
+    <td>351</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9560/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLOptionElement2Test.java#l97'>click2()</a> All</td>
+    <td class='numeric'>97</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>352</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9560/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLOptionElement2Test.java#l664'>without_new()</a> FF24, IE11</td>
+    <td class='numeric'>664</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HTMLPreElementTest</td>
+    <td>353</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLPreElementTest.java#l33'>testWidth()</a> All</td>
+    <td class='numeric'>33</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>HTMLScriptElementTest</td>
+    <td>354</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9356/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLScriptElementTest.java#l918'>innerHTMLGetSet()</a> IE8</td>
+    <td class='numeric'>918</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>355</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9356/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLScriptElementTest.java#l659'>onReadyStateChange_Order()</a> IE8</td>
+    <td class='numeric'>659</td>
+    <td>Verifies the correct the ordering of script element execution, deferred script element execution, script ready state changes, deferred script ready state changes, and onload handlers.</td>
+  </tr>
+  <tr>
+    <td>HTMLSpanElementTest</td>
+    <td>356</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9663/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLSpanElementTest.java#l95'>asText()</a> IE8</td>
+    <td class='numeric'>95</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>HTMLTableCaptionElementTest</td>
+    <td>357</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9278/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableCaptionElementTest.java#l38'>getAlign()</a> IE8, IE11</td>
+    <td class='numeric'>38</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>358</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9278/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableCaptionElementTest.java#l66'>setAlign()</a> IE8, IE11</td>
+    <td class='numeric'>66</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='3'>HTMLTableCellElementTest</td>
+    <td>359</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9623/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableCellElementTest.java#l508'>borderColor()</a> IE</td>
+    <td class='numeric'>508</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>360</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9623/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableCellElementTest.java#l486'>offsetHeight()</a> IE8</td>
+    <td class='numeric'>486</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>361</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9623/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableCellElementTest.java#l146'>vAlign()</a> FF</td>
+    <td class='numeric'>146</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='4'>HTMLTableColElementTest</td>
+    <td>362</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableColElementTest.java#l40'>getAlign()</a> IE8, IE11</td>
+    <td class='numeric'>40</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>363</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableColElementTest.java#l69'>setAlign()</a> IE8, IE11</td>
+    <td class='numeric'>69</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>364</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableColElementTest.java#l223'>vAlign()</a> FF</td>
+    <td class='numeric'>223</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>365</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableColElementTest.java#l349'>width_null()</a> FF</td>
+    <td class='numeric'>349</td>
+    <td>Regression test for bug 2948498.</td>
+  </tr>
+  <tr>
+    <td rowspan='3'>HTMLTableElementTest</td>
+    <td>366</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9440/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableElementTest.java#l760'>borderColor()</a> IE</td>
+    <td class='numeric'>760</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>367</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9440/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableElementTest.java#l795'>borderColorDark()</a> IE</td>
+    <td class='numeric'>795</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>368</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9440/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableElementTest.java#l830'>borderColorLight()</a> IE</td>
+    <td class='numeric'>830</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='4'>HTMLTableRowElementTest</td>
+    <td>369</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9576/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableRowElementTest.java#l468'>borderColor()</a> IE</td>
+    <td class='numeric'>468</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>370</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9576/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableRowElementTest.java#l503'>borderColorDark()</a> IE</td>
+    <td class='numeric'>503</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>371</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9576/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableRowElementTest.java#l538'>borderColorLight()</a> IE</td>
+    <td class='numeric'>538</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>372</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9576/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableRowElementTest.java#l224'>vAlign()</a> FF</td>
+    <td class='numeric'>224</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='3'>HTMLTableSectionElementTest</td>
+    <td>373</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9576/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableSectionElementTest.java#l114'>vAlign_tbody()</a> FF</td>
+    <td class='numeric'>114</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>374</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9576/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableSectionElementTest.java#l125'>vAlign_tfoot()</a> FF</td>
+    <td class='numeric'>125</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>375</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9576/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTableSectionElementTest.java#l103'>vAlign_thead()</a> FF</td>
+    <td class='numeric'>103</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='4'>HTMLTextAreaElementTest</td>
+    <td>376</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9624/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTextAreaElementTest.java#l545'>getAttributeAndSetValueNull()</a> CHROME, FF</td>
+    <td class='numeric'>545</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>377</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9624/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTextAreaElementTest.java#l149'>selection()</a> CHROME</td>
+    <td class='numeric'>149</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>378</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9624/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTextAreaElementTest.java#l161'>selection_outOfBounds()</a> CHROME</td>
+    <td class='numeric'>161</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>379</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9624/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/html/HTMLTextAreaElementTest.java#l173'>selection_reverseOrder()</a> CHROME, IE11</td>
+    <td class='numeric'>173</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>SVGAngleTest</td>
+    <td>380</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9584/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/svg/SVGAngleTest.java#l36'>simpleScriptable()</a> FF</td>
+    <td class='numeric'>36</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='3'>XMLDocument2Test</td>
+    <td>381</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9567/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLDocument2Test.java#l530'>attributeOrder()</a> FF, CHROME, IE8</td>
+    <td class='numeric'>530</td>
+    <td>Test case for issue #1576.</td>
+  </tr>
+  <tr>
+    <td>382</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9567/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLDocument2Test.java#l291'>firstChild_xmlDeclaration()</a> IE8</td>
+    <td class='numeric'>291</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>383</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9567/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLDocument2Test.java#l321'>firstChild_xmlDeclaration_activeX()</a> IE</td>
+    <td class='numeric'>321</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='3'>XMLDocumentTest</td>
+    <td>384</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9672/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLDocumentTest.java#l836'>getElementById_xml()</a> FF</td>
+    <td class='numeric'>836</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>385</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9672/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLDocumentTest.java#l798'>getElementsByTagNameWithNamespace()</a> CHROME, IE11</td>
+    <td class='numeric'>798</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>386</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9672/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLDocumentTest.java#l1034'>test()</a> IE11</td>
+    <td class='numeric'>1034</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>XMLHttpRequest2Test</td>
+    <td>387</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9429/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLHttpRequest2Test.java#l187'>openThrowOnEmptyUrl()</a> IE11</td>
+    <td class='numeric'>187</td>
+    <td>XHR.open throws an exception if URL parameter is null or empty string.</td>
+  </tr>
+  <tr>
+    <td>388</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9429/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLHttpRequest2Test.java#l394'>xhrDownloadInBackground()</a> All</td>
+    <td class='numeric'>394</td>
+    <td>Ensures that XHR download is performed without altering other JS jobs. Currently HtmlUnit doesn't behave correctly here because download and callback execution are executed within the same synchronize block on the HtmlPage.</td>
+  </tr>
+  <tr>
+    <td>XMLHttpRequest3Test</td>
+    <td>389</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9638/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLHttpRequest3Test.java#l378'>streaming()</a> All</td>
+    <td class='numeric'>378</td>
+    <td>Regression test for bug 1209686 (onreadystatechange not called with partial data when emulating FF).</td>
+  </tr>
+  <tr>
+    <td rowspan='7'>XMLHttpRequestTest</td>
+    <td>390</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9642/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLHttpRequestTest.java#l1273'>java_encoding()</a> All</td>
+    <td class='numeric'>1273</td>
+    <td>Helper method Bug #1623.</td>
+  </tr>
+  <tr>
+    <td>391</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9642/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLHttpRequestTest.java#l681'>overrideMimeType_charset()</a> IE11</td>
+    <td class='numeric'>681</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>392</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9642/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLHttpRequestTest.java#l1243'>overrideMimeType_charset_all()</a> CHROME, FF, IE11</td>
+    <td class='numeric'>1243</td>
+    <td>Test case for Bug #1623.</td>
+  </tr>
+  <tr>
+    <td>393</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9642/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLHttpRequestTest.java#l733'>overrideMimeType_charset_empty()</a> IE11</td>
+    <td class='numeric'>733</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>394</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9642/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLHttpRequestTest.java#l707'>overrideMimeType_charset_upper_case()</a> IE11</td>
+    <td class='numeric'>707</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>395</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9642/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLHttpRequestTest.java#l759'>overrideMimeType_charset_wrong()</a> IE11, CHROME</td>
+    <td class='numeric'>759</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>396</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9642/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLHttpRequestTest.java#l510'>responseXML2()</a> FF</td>
+    <td class='numeric'>510</td>
+    <td>Regression test for IE specific properties attribute.text & attribute.xml.</td>
+  </tr>
+  <tr>
+    <td rowspan='3'>XMLSerializerTest</td>
+    <td>397</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8947/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLSerializerTest.java#l155'>htmlAttributes()</a> FF, IE8, IE11</td>
+    <td class='numeric'>155</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>398</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8947/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLSerializerTest.java#l376'>inputTagWithoutType()</a> FF, IE11</td>
+    <td class='numeric'>376</td>
+    <td>There is a small difference between HtmlUnit and FF. HtmlUnit adds type=text per default to the input FF handles input without type as type=text the fix for this is too big, so i made this workaround and add another (not yet implemented) test</td>
+  </tr>
+  <tr>
+    <td>399</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8947/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/host/xml/XMLSerializerTest.java#l98'>nameSpaces()</a> All</td>
+    <td class='numeric'>98</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='6'>HtmlUnitRegExpProxyGlobalPropertiesTest</td>
+    <td>400</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9384/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/HtmlUnitRegExpProxyGlobalPropertiesTest.java#l93'>regExpExecTooManyGroups()</a> IE11</td>
+    <td class='numeric'>93</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>401</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9384/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/HtmlUnitRegExpProxyGlobalPropertiesTest.java#l178'>regExpExecTooManyGroupsGlobal()</a> IE11</td>
+    <td class='numeric'>178</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>402</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9384/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/HtmlUnitRegExpProxyGlobalPropertiesTest.java#l131'>regExpExecTooManyGroupsIgnoreCase()</a> IE11</td>
+    <td class='numeric'>131</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>403</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9384/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/HtmlUnitRegExpProxyGlobalPropertiesTest.java#l244'>regExpTestTooManyGroups()</a> IE11</td>
+    <td class='numeric'>244</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>404</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9384/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/HtmlUnitRegExpProxyGlobalPropertiesTest.java#l329'>regExpTestTooManyGroupsGlobal()</a> IE11</td>
+    <td class='numeric'>329</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>405</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9384/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/HtmlUnitRegExpProxyGlobalPropertiesTest.java#l282'>regExpTestTooManyGroupsIgnoreCase()</a> IE11</td>
+    <td class='numeric'>282</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>HtmlUnitRegExpProxyInstancePropertiesTest</td>
+    <td>406</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9238/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/HtmlUnitRegExpProxyInstancePropertiesTest.java#l142'>regExResultProperties()</a> All</td>
+    <td class='numeric'>142</td>
+    <td>Test for bug 1455.</td>
+  </tr>
+  <tr>
+    <td rowspan='5'>AlphanumericTest</td>
+    <td>407</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/AlphanumericTest.java#l49'>test2()</a> IE8</td>
+    <td class='numeric'>49</td>
+    <td>Be sure all non-alphanumerics are matched by \W.</td>
+  </tr>
+  <tr>
+    <td>408</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/AlphanumericTest.java#l63'>test3()</a> IE8</td>
+    <td class='numeric'>63</td>
+    <td>Be sure all non-alphanumerics are not matched by \w.</td>
+  </tr>
+  <tr>
+    <td>409</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/AlphanumericTest.java#l85'>test5()</a> IE8</td>
+    <td class='numeric'>85</td>
+    <td>Be sure all alphanumerics are matched by \w.</td>
+  </tr>
+  <tr>
+    <td>410</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/AlphanumericTest.java#l97'>test6()</a> IE8</td>
+    <td class='numeric'>97</td>
+    <td>Be sure all non-alphanumerics are matched by \W.</td>
+  </tr>
+  <tr>
+    <td>411</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/AlphanumericTest.java#l121'>test8()</a> IE8</td>
+    <td class='numeric'>121</td>
+    <td>Be sure all non-alphanumerics are matched by \W (using literals).</td>
+  </tr>
+  <tr>
+    <td>AsteriskTest</td>
+    <td>412</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/AsteriskTest.java#l143'>test12()</a> All</td>
+    <td class='numeric'>143</td>
+    <td>Tests 'a0.b2.c3'.match(/[xyz]*1/.</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>DigitTest</td>
+    <td>413</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/DigitTest.java#l58'>test2()</a> IE8</td>
+    <td class='numeric'>58</td>
+    <td>Tests non_digits.match(new RegExp('\\D+')).</td>
+  </tr>
+  <tr>
+    <td>414</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/DigitTest.java#l104'>test6()</a> IE8</td>
+    <td class='numeric'>104</td>
+    <td>Tests s.match(new RegExp('\\D+')).</td>
+  </tr>
+  <tr>
+    <td rowspan='8'>SimpleFormTest</td>
+    <td>415</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/SimpleFormTest.java#l37'>test1()</a> IE, FF, CHROME</td>
+    <td class='numeric'>37</td>
+    <td>Tests /[0-9]{3}/('23 2 34 678 9 09').</td>
+  </tr>
+  <tr>
+    <td>416</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/SimpleFormTest.java#l48'>test2()</a> IE, FF, CHROME</td>
+    <td class='numeric'>48</td>
+    <td>Tests /3.{4}8/('23 2 34 678 9 09').</td>
+  </tr>
+  <tr>
+    <td>417</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/SimpleFormTest.java#l59'>test3()</a> IE, FF, CHROME</td>
+    <td class='numeric'>59</td>
+    <td>Tests (/3.{4}8/('23 2 34 678 9 09')).length.</td>
+  </tr>
+  <tr>
+    <td>418</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/SimpleFormTest.java#l70'>test4()</a> IE, FF, CHROME</td>
+    <td class='numeric'>70</td>
+    <td>Tests re('23 2 34 678 9 09').</td>
+  </tr>
+  <tr>
+    <td>419</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/SimpleFormTest.java#l81'>test5()</a> IE, FF, CHROME</td>
+    <td class='numeric'>81</td>
+    <td>Tests re('23 2 34 678 9 09').</td>
+  </tr>
+  <tr>
+    <td>420</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/SimpleFormTest.java#l92'>test6()</a> IE, FF, CHROME</td>
+    <td class='numeric'>92</td>
+    <td>Tests /3.{4}8/('23 2 34 678 9 09').</td>
+  </tr>
+  <tr>
+    <td>421</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/SimpleFormTest.java#l103'>test7()</a> IE, FF, CHROME</td>
+    <td class='numeric'>103</td>
+    <td>Tests (re('23 2 34 678 9 09')).length.</td>
+  </tr>
+  <tr>
+    <td>422</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9564/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/SimpleFormTest.java#l114'>test8()</a> IE, FF, CHROME</td>
+    <td class='numeric'>114</td>
+    <td>Tests (/3.{4}8/('23 2 34 678 9 09')).length.</td>
+  </tr>
+  <tr>
+    <td rowspan='4'>StringSplitTest</td>
+    <td>423</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/StringSplitTest.java#l86'>test6()</a> IE8</td>
+    <td class='numeric'>86</td>
+    <td>Tests 'abc'.split(/[a-z]/).</td>
+  </tr>
+  <tr>
+    <td>424</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/StringSplitTest.java#l98'>test7()</a> IE8</td>
+    <td class='numeric'>98</td>
+    <td>Tests 'abc'.split(/[a-z]/).</td>
+  </tr>
+  <tr>
+    <td>425</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/StringSplitTest.java#l110'>test8()</a> IE8</td>
+    <td class='numeric'>110</td>
+    <td>Tests 'abc'.split(new RegExp('[a-z]')).</td>
+  </tr>
+  <tr>
+    <td>426</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/javascript/regexp/mozilla/js1_2/StringSplitTest.java#l122'>test9()</a> IE8</td>
+    <td class='numeric'>122</td>
+    <td>Tests 'abc'.split(new RegExp('[a-z]')).</td>
+  </tr>
+  <tr>
+    <td>Dojo102Test</td>
+    <td>427</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/8931/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/Dojo102Test.java#l62'>dojo()</a> IE</td>
+    <td class='numeric'>62</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='35'>JQuery182Test</td>
+    <td>428</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l6673'>Sizzle__selector__XML_Document_Selectors()</a> All</td>
+    <td class='numeric'>6673</td>
+    <td>Test {645=[IE11], 646=[FF24, FF31], 648=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>429</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l6764'>Sizzle__selector__pseudo___misc()</a> All</td>
+    <td class='numeric'>6764</td>
+    <td>Test {654=[IE11], 655=[FF24, FF31], 657=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>430</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l4889'>ajax__jQuery_ajaxSetup__timeout__Number_____with_global_timeout()</a> All</td>
+    <td class='numeric'>4889</td>
+    <td>Test {468=[IE11], 469=[FF24, FF31], 471=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>431</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l4278'>ajax__jQuery_ajax_____error_callbacks()</a> All</td>
+    <td class='numeric'>4278</td>
+    <td>Test {407=[IE11], 408=[FF24, FF31], 410=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>432</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l4045'>css___visible_selector_works_properly_on_children_with_a_hidden_parent__bug__4512_()</a> All</td>
+    <td class='numeric'>4045</td>
+    <td>Test {384=[IE11], 385=[FF24, FF31], 387=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>433</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l4076'>css__box_model_properties_incorrectly_returning___instead_of_px__see__10639_and__12088()</a> All</td>
+    <td class='numeric'>4076</td>
+    <td>Test {387=[IE11], 388=[FF24, FF31], 390=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>434</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l3880'>css__css_String_Hash_()</a> All</td>
+    <td class='numeric'>3880</td>
+    <td>Test {370=[IE11], 371=[FF24, FF31, IE8]}.</td>
+  </tr>
+  <tr>
+    <td>435</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l4137'>css__percentage_properties_for_left_and_top_should_be_transformed_to_pixels__see__9505()</a> All</td>
+    <td class='numeric'>4137</td>
+    <td>Test {393=[IE11], 394=[FF24, FF31], 396=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>436</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l3981'>css__show___resolves_correct_default_display__8099()</a> FF, IE11, IE8</td>
+    <td class='numeric'>3981</td>
+    <td>Test {378=[IE11], 379=[FF24, FF31], 381=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>437</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l6632'>dimensions__window_vs__large_document()</a> All</td>
+    <td class='numeric'>6632</td>
+    <td>Test {641=[IE11], 642=[FF24, FF31], 644=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>438</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l6621'>dimensions__window_vs__small_document()</a> All</td>
+    <td class='numeric'>6621</td>
+    <td>Test {640=[IE11], 641=[FF24, FF31], 643=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>439</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l5497'>effects__CSS_Auto_to_show()</a> All</td>
+    <td class='numeric'>5497</td>
+    <td>Test {528=[IE11, IE8], 529=[FF24, FF31]}.</td>
+  </tr>
+  <tr>
+    <td>440</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l5548'>effects__JS_Auto_to_show()</a> All</td>
+    <td class='numeric'>5548</td>
+    <td>Test {533=[IE11, IE8], 534=[FF24, FF31]}.</td>
+  </tr>
+  <tr>
+    <td>441</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l5222'>effects__animate_block_as_inline_width_height()</a> IE8</td>
+    <td class='numeric'>5222</td>
+    <td>Test {501=[IE11], 502=[FF24, FF31], 504=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>442</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l5244'>effects__animate_block_width_height()</a> IE8</td>
+    <td class='numeric'>5244</td>
+    <td>Test {503=[IE11], 504=[FF24, FF31], 506=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>443</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l6260'>effects__animate_does_not_change_start_value_for_non_px_animation___7109_()</a> All</td>
+    <td class='numeric'>6260</td>
+    <td>Test {604=[IE11], 605=[FF24, FF31], 607=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>444</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l5233'>effects__animate_native_inline_width_height()</a> IE8</td>
+    <td class='numeric'>5233</td>
+    <td>Test {502=[IE11], 503=[FF24, FF31], 505=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>445</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l5180'>effects__animate_negative_height()</a> IE8</td>
+    <td class='numeric'>5180</td>
+    <td>Test {497=[IE11], 498=[FF24, FF31], 500=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>446</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l5211'>effects__animate_negative_padding()</a> All</td>
+    <td class='numeric'>5211</td>
+    <td>Test {500=[IE11], 501=[FF24, FF31], 503=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>447</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l5276'>effects__animate_table_cell_width_height()</a> All</td>
+    <td class='numeric'>5276</td>
+    <td>Test {506=[IE11], 507=[FF24, FF31], 509=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>448</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l5265'>effects__animate_table_row_width_height()</a> All</td>
+    <td class='numeric'>5265</td>
+    <td>Test {505=[IE11], 506=[FF24, FF31], 508=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>449</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l6039'>effects__slideToggle___stop___slideToggle__()</a> IE8</td>
+    <td class='numeric'>6039</td>
+    <td>Test {582=[IE11], 583=[FF24, FF31], 585=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>450</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l2301'>event__Delegated_events_in_SVG___10791_()</a> FF</td>
+    <td class='numeric'>2301</td>
+    <td>Test {213=[IE11], 214=[FF24, FF31, IE8]}.</td>
+  </tr>
+  <tr>
+    <td>451</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l2250'>event__submit_event_bubbles_on_copied_forms___11649_()</a> IE8</td>
+    <td class='numeric'>2250</td>
+    <td>Test {208=[IE11], 209=[FF24, FF31, IE8]}.</td>
+  </tr>
+  <tr>
+    <td>452</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l6344'>offset__absolute()</a> All</td>
+    <td class='numeric'>6344</td>
+    <td>Test {613=[IE11], 614=[FF24, FF31], 616=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>453</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l6410'>offset__body()</a> All</td>
+    <td class='numeric'>6410</td>
+    <td>Test {619=[IE11], 620=[FF24, FF31], 622=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>454</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l6377'>offset__fixed()</a> All</td>
+    <td class='numeric'>6377</td>
+    <td>Test {616=[IE11], 617=[FF24, FF31], 619=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>455</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l6355'>offset__relative()</a> All</td>
+    <td class='numeric'>6355</td>
+    <td>Test {614=[IE11], 615=[FF24, FF31], 617=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>456</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l6399'>offset__scroll()</a> All</td>
+    <td class='numeric'>6399</td>
+    <td>Test {618=[IE11], 619=[FF24, FF31], 621=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>457</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l6366'>offset__static()</a> All</td>
+    <td class='numeric'>6366</td>
+    <td>Test {615=[IE11], 616=[FF24, FF31], 618=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>458</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l6388'>offset__table()</a> All</td>
+    <td class='numeric'>6388</td>
+    <td>Test {617=[IE11], 618=[FF24, FF31], 620=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>459</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l2763'>selector___jQuery_only__Sizzle_cache_collides_with_multiple_Sizzles_on_a_page()</a> All</td>
+    <td class='numeric'>2763</td>
+    <td>Test {259=[IE11], 260=[FF24, FF31, IE8]}.</td>
+  </tr>
+  <tr>
+    <td>460</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l2752'>selector___jQuery_only__attributes___jQuery_attr()</a> All</td>
+    <td class='numeric'>2752</td>
+    <td>Test {258=[IE11], 259=[FF24, FF31, IE8]}.</td>
+  </tr>
+  <tr>
+    <td>461</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l1218'>support__Verify_that_the_support_tests_resolve_as_expected_per_browser()</a> IE8</td>
+    <td class='numeric'>1218</td>
+    <td>Test {107=[IE8]}.</td>
+  </tr>
+  <tr>
+    <td>462</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9644/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/JQuery182Test.java#l1194'>support__body_background_is_not_lost_if_set_prior_to_loading_jQuery___9238_()</a> IE8</td>
+    <td class='numeric'>1194</td>
+    <td>Test {105=[FF24, FF31, IE11, IE8]}.</td>
+  </tr>
+  <tr>
+    <td>MochiKitTest</td>
+    <td>463</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9565/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/MochiKitTest.java#l141'>style()</a> FF, IE11</td>
+    <td class='numeric'>141</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>Prototype150rc1Test</td>
+    <td>464</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9026/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/Prototype150rc1Test.java#l103'>dom()</a> IE8, CHROME</td>
+    <td class='numeric'>103</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>465</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9026/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/Prototype150rc1Test.java#l144'>position()</a> All</td>
+    <td class='numeric'>144</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='3'>Prototype160Test</td>
+    <td>466</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9379/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/Prototype160Test.java#l104'>dom()</a> All</td>
+    <td class='numeric'>104</td>
+    <td>Note: <tt>testElementGetDimensions:</tt>, <tt>testElementGetStyle</tt>, <tt>testElementGetHeight</tt>,       <tt>testElementScrollTo:</tt>, <tt>testPositionedOffset</tt>, <tt>testViewportOffset</tt>,       <tt>testViewportDimensions</tt>, <tt>testViewportScrollOffsets</tt>       and <tt>testElementGetWidth</tt> are expected to fail with HtmlUnit,       as they need calculating width and height of all elements. Other tests succeed.</td>
+  </tr>
+  <tr>
+    <td>467</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9379/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/Prototype160Test.java#l172'>position()</a> All</td>
+    <td class='numeric'>172</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>468</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9379/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/Prototype160Test.java#l205'>unitTests()</a> FF, IE11, CHROME</td>
+    <td class='numeric'>205</td>
+    <td>1 expected failure is because the server port is other than 4711.</td>
+  </tr>
+  <tr>
+    <td rowspan='4'>Prototype161Test</td>
+    <td>469</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9028/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/Prototype161Test.java#l95'>dom()</a> All</td>
+    <td class='numeric'>95</td>
+    <td>Note: <tt>testElementGetDimensions:</tt>, <tt>testElementGetStyle</tt>, <tt>testElementGetHeight</tt>,       <tt>testElementScrollTo:</tt>, <tt>testPositionedOffset</tt>, <tt>testViewportOffset</tt>,       <tt>testViewportDimensions</tt>, <tt>testViewportScrollOffsets</tt>       and <tt>testElementGetWidth</tt> are expected to fail with HtmlUnit,       as they need calculating width and height of all elements. Other tests succeed.</td>
+  </tr>
+  <tr>
+    <td>470</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9028/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/Prototype161Test.java#l138'>form()</a> IE11, CHROME</td>
+    <td class='numeric'>138</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>471</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9028/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/Prototype161Test.java#l180'>position()</a> All</td>
+    <td class='numeric'>180</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>472</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9028/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/Prototype161Test.java#l213'>selector()</a> IE11, CHROME</td>
+    <td class='numeric'>213</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='7'>Prototype171Test</td>
+    <td>473</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9298/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/Prototype171Test.java#l63'>array()</a> IE8</td>
+    <td class='numeric'>63</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>474</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9298/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/Prototype171Test.java#l96'>dom()</a> All</td>
+    <td class='numeric'>96</td>
+    <td>Note: <tt>testElementGetDimensions:</tt>, <tt>testElementGetStyle</tt>, <tt>testElementGetHeight</tt>,       <tt>testElementScrollTo:</tt>, <tt>testPositionedOffset</tt>, <tt>testViewportOffset</tt>,       <tt>testViewportDimensions</tt>, <tt>testViewportScrollOffsets</tt>       and <tt>testElementGetWidth</tt> are expected to fail with HtmlUnit,       as they need calculating width and height of all elements. Other tests succeed.</td>
+  </tr>
+  <tr>
+    <td>475</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9298/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/Prototype171Test.java#l139'>event()</a> All</td>
+    <td class='numeric'>139</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>476</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9298/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/Prototype171Test.java#l148'>form()</a> CHROME</td>
+    <td class='numeric'>148</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>477</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9298/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/Prototype171Test.java#l174'>layout()</a> All</td>
+    <td class='numeric'>174</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>478</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9298/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/Prototype171Test.java#l207'>position()</a> All</td>
+    <td class='numeric'>207</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>479</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9298/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/Prototype171Test.java#l248'>selector()</a> IE8, CHROME</td>
+    <td class='numeric'>248</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='2'>TinyMceTest</td>
+    <td>480</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9302/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/TinyMceTest.java#l52'>api()</a> IE8, IE11</td>
+    <td class='numeric'>52</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>481</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9302/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/TinyMceTest.java#l64'>basic()</a> All</td>
+    <td class='numeric'>64</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan='8'>YuiTest</td>
+    <td>482</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9527/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/YuiTest.java#l87'>calendar()</a> IE8</td>
+    <td class='numeric'>87</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>483</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9527/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/YuiTest.java#l96'>colorPicker()</a> IE8</td>
+    <td class='numeric'>96</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>484</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9527/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/YuiTest.java#l125'>dom()</a> IE8</td>
+    <td class='numeric'>125</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>485</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9527/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/YuiTest.java#l134'>dragDrop()</a> IE8</td>
+    <td class='numeric'>134</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>486</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9527/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/YuiTest.java#l152'>editor()</a> All</td>
+    <td class='numeric'>152</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>487</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9527/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/YuiTest.java#l210'>element()</a> IE8</td>
+    <td class='numeric'>210</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>488</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9527/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/YuiTest.java#l201'>imageLoader()</a> IE8</td>
+    <td class='numeric'>201</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>489</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9527/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/libraries/YuiTest.java#l164'>yuiLoaderRollup()</a> All</td>
+    <td class='numeric'>164</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>SvgMatrixTest</td>
+    <td>490</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9565/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/svg/SvgMatrixTest.java#l37'>simpleScriptable()</a> FF</td>
+    <td class='numeric'>37</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>SvgMpathTest</td>
+    <td>491</td>
+    <td><a href='https://sourceforge.net/p/htmlunit/code/9565/tree/trunk/htmlunit/src/test/java/com/gargoylesoftware/htmlunit/svg/SvgMpathTest.java#l41'>simpleScriptable()</a> FF</td>
+    <td class='numeric'>41</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body></html>

@@ -1,0 +1,17 @@
+
+
+
+public class Assert {
+
+    public static void boolean assertEquals(String a, String b) {
+	if (!a.equals(b)) {
+	    throw AssertionError;
+	}
+    }
+
+    public static void boolean assertTrue(boolean input) {
+	if (!input) {
+	    throw AssertionError;
+	}
+    }
+}
